@@ -1,12 +1,5 @@
-obj/BrimstoneDataService.csproj.nuget.dgspec.json
-obj/BrimstoneDataService.csproj.nuget.g.props
-obj/BrimstoneDataService.csproj.nuget.g.targets
-obj/project.assets.json
-obj/project.nuget.cache
-obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
-obj/Debug/net6.0/BrimstoneDataService.AssemblyInfo.cs
-obj/Debug/net6.0/BrimstoneDataService.AssemblyInfoInputs.cache
-obj/Debug/net6.0/BrimstoneDataService.assets.cache
-obj/Debug/net6.0/BrimstoneDataService.csproj.AssemblyReference.cache
-obj/Debug/net6.0/BrimstoneDataService.GeneratedMSBuildEditorConfig.editorconfig
-obj/Debug/net6.0/BrimstoneDataService.GlobalUsings.g.cs
+obj/
+.vs/
+BrimstoneDataService.csproj.user
+bin/
+.suo/

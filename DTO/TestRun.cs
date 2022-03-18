@@ -26,6 +26,7 @@ namespace BrimstoneRecorderTestResultPersistenceService
 		public string? ApplicationVersion { get; set; }
 
 		public string? Options { get; set; }
+		public string? Description { get; set; }
     }
 }
 

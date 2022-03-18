@@ -43,7 +43,8 @@ namespace BrimstonDataService.Controllers
                 "TouchWorksWebserver",
                 "TouchWorksUser",
                 "TouchWorksWebserverVersion",
-                "Description"
+                "Description",
+                "optionsUsedJson"
             };
 
             using (SqlConnection connection = new SqlConnection(
@@ -134,7 +135,8 @@ namespace BrimstonDataService.Controllers
             command.Parameters.Add("@WorkflowUserTime", SqlDbType.Int).Value = test.UserTime;
             command.Parameters.Add("@WorkflowStatus", SqlDbType.VarChar).Value = test.Status;
             this.addNullableParameter(command, "@WorkflowErrorMessage", test.ErrorMessage);
-            this.addNullableParameter(command, "@Description", test.Options);
+            this.addNullableParameter(command, "@optionsUsedJson", test.Options);
+            this.addNullableParameter(command, "@Description", test.Description);
 
             command.Parameters.Add("@BrimstoneBranch", SqlDbType.VarChar).Value = test.BrimstoneVersion;
             command.Parameters.Add("@BrimstoneBrowser", SqlDbType.VarChar).Value = test.ChromeVersion;
