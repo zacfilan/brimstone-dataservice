@@ -164,7 +164,7 @@ namespace BrimstonDataService.Controllers
                     {
                         continue;
                     }
-                    for (var i=0; i < d.Count; ++i)
+                    for (var i = 0; i < d.Count; ++i)
                     {
                         var entry = d[i];
                         var match = entry.Item1.Match(trimLine);
@@ -176,12 +176,12 @@ namespace BrimstonDataService.Controllers
                         }
                     }
                 }
-                foreach (var entry in d)
+            }
+            foreach (var entry in d)
+            {
+                if(entry.Item3 == false)
                 {
-                    if(entry.Item3 == false)
-                    {
-                        command.Parameters.Add($"@{entry.Item2}", SqlDbType.VarChar).Value = DBNull.Value;
-                    }
+                    command.Parameters.Add($"@{entry.Item2}", SqlDbType.VarChar).Value = DBNull.Value;
                 }
             }
         }
